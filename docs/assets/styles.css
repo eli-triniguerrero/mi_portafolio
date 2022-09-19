@@ -1,0 +1,171 @@
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Rubik Bold';
+    src: url('fonts/Rubik-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight:bold;
+  }
+
+@font-face {
+    font-family: 'BerkshireSwash';
+    src: url('fonts/BerkshireSwash-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .text-font {
+    font-family: 'BerkshireSwash' !important;
+    font-size: 2rem;
+  }
+
+  .text-rubik-regular {
+    font-family: 'Rubik' !important;
+  }
+  .text-rubik-bold {
+    font-family: 'Rubik Bold' !important;
+  }
+
+/* General */
+body {
+  font-family: 'Rubik';
+  color: #333333;
+}
+.text-aqua-1 {
+  color: #08996E !important;
+}
+.text-aqua-2 {
+  color: #2A906E !important;
+}
+.text-aqua-3 {
+  color: #079B87 !important;
+}
+.text-aqua-4 {
+  color: #4BAFA2 !important;
+}
+
+/*-+-+-+-+-+ NAV +-+-+-+-+-*/
+/*hover para botones redes contacto*/
+.btn-outline-aqua-1:hover {
+  background-color: #0B704E !important;
+}
+.btn-outline-aqua-2:hover {
+  background-color: #2A906E !important;
+}
+.btn-outline-aqua-3:hover {
+  background-color: #079B87 !important;
+}
+.btn-outline-aqua-4:hover {
+  background-color: #4BAFA2 !important;
+}
+.btn-outline-orange:hover {
+  background-color: #FF5733 !important;
+}
+
+/*-+-+-+-+-+-+-+-+ INICIO +-+-+-+-+-+-+-+-*/
+@media  (max-width: 500px) {
+  .bg-img-inicio {
+    background-position: top right !important;
+    width: 50%;
+  }
+  .bg-img-quiensoy {
+    background-position: top left !important;
+    width: 100%;
+  }
+  .text-rotate-none {
+    -webkit-transform:none; 
+  -moz-transform: none; 
+  font-size: 4rem;   
+  }
+}
+.main-container {
+  margin-top: 8rem;
+}
+.bg-img {
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.bg-img-inicio {
+  background-image: url('imgs/bg_red_degrade_01.png');
+  width: 100%;
+  
+}
+.bg-img-quiensoy {
+  background-image: url('imgs/bg_purple_degrade_01.png');
+}
+.bg-img-proyectos {
+  background-image: url('imgs/bg_aqua_degrade_01.png');
+}
+
+.shadow-text-aqua {
+  text-shadow: 0.08em 0.08em 0.05em #043726;
+}
+.shadow-text-aqua-light {
+  text-shadow: 0.08em 0.08em 0.05em #29DEA9;
+}
+.shadow-text-orange {
+  text-shadow: 0.08em 0.08em 0.05em #371604;
+}
+.subtitle {
+  font-size: 1.5rem;
+}
+/*Texto giro*/
+.text-rotate {
+  margin-top: 15rem;
+  -webkit-transform: rotate(-90deg); 
+-moz-transform: rotate(-90deg); 
+font-size: 4rem;   
+}
+
+/* CITA */
+blockquote {
+  color: #434343;
+  font-family: 'BerkshireSwash', Tahoma, sans-serif;
+  font-size: 2.2rem;
+  width: 80%;
+  margin: 2rem auto;
+}
+blockquote h1 {
+  font-size: 4rem;
+}
+blockquote p {
+  /*font-style: italic;*/
+  margin-bottom: 0;
+}
+
+blockquote p::before,
+blockquote p::after {
+  content: "''";
+  font-family: 'BerkshireSwash', Tahoma, sans-serif;
+  font-size: 7rem;
+  margin: -2rem 0 0 -4rem;
+  position: absolute;
+  opacity: 0.5;
+}
+
+blockquote p::after {
+  content: "''";
+  margin: -1rem -4rem 0 0;
+}
+
+blockquote cite {
+  font-size: 1.3rem;
+}
+
+/*-+-+-+-+-+-+-+ Proyectos +-+-+-+-+-+-+-*/
+ /* CARD */
+ .border-top-info {
+  border-top: 1rem solid #0dcaf0;
+ }
+ .shadow-light {
+  box-shadow: 1.08em 1.08em 0.05em #333333;  
+ }
+ 
