@@ -165,6 +165,9 @@ blockquote cite {
  .border-top-info {
   border-top: 1rem solid #0dcaf0;
  }
+ .border-top-warning {
+  border-top: 1rem solid #ffc107;
+ }
  .shadow-light {
   box-shadow: 1.08em 1.08em 0.05em #333333;  
  }
