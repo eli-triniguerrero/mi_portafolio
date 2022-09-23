@@ -89,7 +89,7 @@ body {
 }
 .bg-img {
     background-size:cover;
-    background-attachment: fixed;
+    background-attachment:scroll;
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -100,6 +100,7 @@ body {
 }
 .bg-img-quiensoy {
   background-image: url('imgs/bg_purple_degrade_01.png');
+  background-position: top left !important;
 }
 .bg-img-proyectos {
   background-image: url('imgs/bg_aqua_degrade_01.png');
