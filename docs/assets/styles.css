@@ -49,6 +49,12 @@ body {
 .text-aqua-4 {
   color: #4BAFA2 !important;
 }
+.text-purple {
+  color: #3f2274 !important;
+}
+.text-paragrah {
+  font-size: 20px !important;
+}
 
 /*-+-+-+-+-+ NAV +-+-+-+-+-*/
 /*hover para botones redes contacto*/
@@ -115,6 +121,9 @@ body {
 .shadow-text-orange {
   text-shadow: 0.08em 0.08em 0.05em #371604;
 }
+.shadow-text-purple {
+  text-shadow: 0.08em 0.08em 0.05em #160437;
+}
 .subtitle {
   font-size: 1.5rem;
 }
@@ -128,7 +137,7 @@ font-size: 4rem;
 
 /* CITA */
 blockquote {
-  color: #434343;
+  color: #079884;
   font-family: 'BerkshireSwash', Tahoma, sans-serif;
   font-size: 2.2rem;
   
