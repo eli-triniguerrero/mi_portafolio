@@ -169,6 +169,13 @@ blockquote cite {
  .border-top-warning {
   border-top: 1rem solid #ffc107;
  }
+ .border-top-blue {
+  border-top: 1rem solid #0d73f0;
+ }
+ .btn-blue {
+  background-color: #0d73f0;
+ }
+
  .shadow-light {
   box-shadow: 1.08em 1.08em 0.05em #333333;  
  }
