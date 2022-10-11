@@ -37,59 +37,15 @@ body {
   font-family: 'Rubik';
   color: #333333;
 }
-.text-aqua-1 {
-  color: #08996E !important;
-}
-.text-aqua-2 {
-  color: #2A906E !important;
-}
-.text-aqua-3 {
-  color: #079B87 !important;
-}
-.text-aqua-4 {
-  color: #4BAFA2 !important;
-}
-.text-purple {
-  color: #3f2274 !important;
+main.main-padding {
+  padding-top: 20vh;
 }
 .text-paragrah {
   font-size: 20px !important;
 }
 
-/*-+-+-+-+-+ NAV +-+-+-+-+-*/
-/*hover para botones redes contacto*/
-.btn-outline-aqua-1:hover {
-  background-color: #0B704E !important;
-}
-.btn-outline-aqua-2:hover {
-  background-color: #2A906E !important;
-}
-.btn-outline-aqua-3:hover {
-  background-color: #079B87 !important;
-}
-.btn-outline-aqua-4:hover {
-  background-color: #4BAFA2 !important;
-}
-.btn-outline-orange:hover {
-  background-color: #FF5733 !important;
-}
 
 /*-+-+-+-+-+-+-+-+ INICIO +-+-+-+-+-+-+-+-*/
-@media  (max-width: 500px) {
-  .bg-img-inicio {
-    background-position: top right !important;
-    width: 50%;
-  }
-  .bg-img-quiensoy {
-    background-position: top left !important;
-    width: 100%;
-  }
-  .text-rotate-none {
-    -webkit-transform:none; 
-  -moz-transform: none; 
-  font-size: 4rem;   
-  }
-}
 .main-container {
   margin-top: 8rem;
 }
@@ -100,8 +56,9 @@ body {
     background-position: top;
 }
 .bg-img-inicio {
-  background-image: url('imgs/bg_red_degrade_01.png');
+  background-image: url('imgs/v2/bg_red_abstract.jpg');
   width: 100%;
+  height: 100vh;
   
 }
 .bg-img-quiensoy {
@@ -111,28 +68,8 @@ body {
 .bg-img-proyectos {
   background-image: url('imgs/bg_aqua_degrade_01.png');
 }
-
-.shadow-text-aqua {
-  text-shadow: 0.08em 0.08em 0.05em #043726;
-}
-.shadow-text-aqua-light {
-  text-shadow: 0.08em 0.08em 0.05em #29DEA9;
-}
-.shadow-text-orange {
-  text-shadow: 0.08em 0.08em 0.05em #371604;
-}
-.shadow-text-purple {
-  text-shadow: 0.08em 0.08em 0.05em #160437;
-}
 .subtitle {
   font-size: 1.5rem;
-}
-/*Texto giro*/
-.text-rotate {
-  margin-top: 15rem;
-  -webkit-transform: rotate(-90deg); 
--moz-transform: rotate(-90deg); 
-font-size: 4rem;   
 }
 
 /* CITA */
@@ -170,22 +107,20 @@ blockquote cite {
   font-size: 1.3rem;
 }
 
-/*-+-+-+-+-+-+-+ Proyectos +-+-+-+-+-+-+-*/
- /* CARD */
- .border-top-info {
-  border-top: 1rem solid #0dcaf0;
- }
- .border-top-warning {
-  border-top: 1rem solid #ffc107;
- }
- .border-top-blue {
-  border-top: 1rem solid #0d73f0;
- }
- .btn-blue {
-  background-color: #0d73f0;
- }
-
- .shadow-light {
-  box-shadow: 1.08em 1.08em 0.05em #333333;  
- }
- 
+ /*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+ @media  (max-width: 500px) {
+  .bg-img-inicio {
+    height: 100%;
+  }
+  main.main-padding {
+    padding-top: 7vh;
+  }
+}
+@media  (max-width: 800px) {
+  .bg-img-inicio {
+    height: 100vh;
+  }
+  main.main-padding {
+    padding-top: 25vh;
+  }
+}
