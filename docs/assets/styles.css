@@ -105,19 +105,19 @@ blockquote {
 }
 
  /*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
- @media  (max-width: 500px) {
+ /* @media  (min-width: 500px) {
   .bg-img-inicio {
     height: 100%;
   }
   main.main-padding {
-    padding-top: 7vh;
+    padding-top: 2vh;
   }
-}
+} */
 @media  (max-width: 800px) {
   .bg-img-inicio {
-    height: 100vh;
+    height: 100%;
   }
   main.main-padding {
-    padding-top: 25vh;
+    padding-top: 10vh;
   }
 }
