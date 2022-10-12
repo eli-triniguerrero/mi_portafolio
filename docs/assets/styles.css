@@ -82,6 +82,7 @@ main.main-padding {
   -webkit-text-fill-color: transparent;
   color: #b70404;  
 }
+
 .bg-degrade:hover {
   background: -webkit-linear-gradient(#efcc00,#b70404, #333333);
   -webkit-background-clip: text;
