@@ -2,273 +2,382 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio/sobreMi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Rubik:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/bd1a5cacaf.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eli-TriniGuerrero-Portafolio</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/proyects.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"rel="stylesheet" />
+<!-- Google Fonts -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" /> -->
+<!-- MDB -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+<style>
+  #intro {
+    /* background-image: url("assets/imgs/v2/bg_red_abstract.jpg"); */
+    background-image: url("assets/imgs/img_fondo.jpg");
+    height: 50vh;
+  }
+  #intro-colors {
+    height: 50vh;
+    background: rgb(11,133,97);
+    background: linear-gradient(90deg, rgba(11,133,97,1) 0%, rgba(80,35,110,1) 50%, rgba(154,18,18,1) 100%);
+  }
+
+  /* Height for devices larger than 576px */
+  @media (min-width: 992px) {
+    #intro {
+      margin-top: -58.59px;
+    }
+  }
+
+  .navbar .nav-link {
+    color: #fff !important;
+  }
+  .navbar-gradient {
+    background: rgb(11,133,97);
+    background: linear-gradient(90deg, rgba(11,133,97,1) 0%, rgba(80,35,110,1) 50%, rgba(154,18,18,1) 100%);
+    /* background: rgb(17,198,145);
+    background: linear-gradient(90deg, rgba(17,198,145,1) 0%, rgba(131,58,180,1) 50%, rgba(253,29,29,1) 100%); */
+  }
+
+  .mask-custom {
+    backdrop-filter: contrast(140%) brightness(100%) saturate(100%) sepia(50%) hue-rotate(0deg) grayscale(0%) invert(0%) blur(0px);
+    mix-blend-mode: lighten;
+    background: rgba(161, 44, 199, 0.31);
+    opacity: 1;
+  }
+  hr.style-line {
+    /* margin: auto auto; */
+    width: 50%;
+    height: 1rem;
+    border-radius: 10rem;
+    background: rgb(17,198,145);
+    background: linear-gradient(90deg, rgba(17,198,145,1) 0%, 
+    rgba(131,58,180,1) 50%, rgba(253,29,29,1) 100%) !important;
+  }
+</style>
 </head>
 
-<body>
-  <header class="fixed-top">
-    <div class="collapse bg-img-navbar" id="navbarHeader">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-md-7 py-4 d-none d-md-block">
-            <p class="text-muted">
-            <blockquote>
-              <p> "El diseño es realmente un acto de comunicación, lo que significa
-                tener un profundo conocimiento de la persona con la que el diseñador
-                se está comunicando"</p>
-              <cite>-Donald A. Norman</cite>
-            </blockquote>
-            </p>
-          </div>
-          <div class="col-sm-4 offset-md-1  py-md-4 py-3">
-            <h4 class="text-white">
-              Eli <i class="fa-solid fa-hand-peace"></i> UI/UX
-            </h4>
-            <div class="btn-group btn-group-lg d-grid gap-2 d-md-block mb-5" role="group"
-              aria-label="Default button group">
-              <a href="proyectos.html" class="btn btn-outline-light" title="Perfil Linkedin">
-                <i class="fa-solid fa-hand-peace"></i> Proyectos
+<body class="">
+        <!--Main Navigation-->
+        <header>
+          <!--navbar navbar-expand-lg navbar-dark bg-dark d-none d-lg-block fixed-top--> 
+          <nav class="navbar navbar-expand-lg fixed-top navbar-gradient">
+            <div class="container-fluid">
+              <!-- Navbar brand -->
+              <a class="navbar-brand me-2" href="index.html">
+                <img src="assets/imgs/v2/eg_logo_white.png"
+                height="50" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
               </a>
-              <a href="https://www.linkedin.com/in/eli-triniguerrero/" target="_blank" class="btn btn-outline-light"
-                title="Perfil Linkedin">
-                <i class="fab fa-linkedin-in"></i> Linkedin
-              </a>
-              <a href="https://github.com/eli-triniguerrero" target="_blank" class="btn btn-outline-light"
-                title="Perfil GitHub">
-                <i class="fab fa-github-alt"></i> GitHub
-              </a>
-              <a href="https://platzi.com/p/eli_triniguerrero/" target="_blank" class="btn btn-outline-light"
-                title="Perfil Platzi">
-                <i class="fa-solid fa-user-astronaut"></i> Platzi
-              </a>
-              <a href="https://www.instagram.com/ely_bookzinea/" target="_blank" class="btn btn-outline-light"
-                title="Perfil Instagram">
-                <i class="fab fa-instagram"></i> Instagram
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="navbar shadow-sm bg-dark bg-gradient">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/imgs/v2/eg_logo_white.png" alt="logotipo" width="60"
-            class="d-inline-block align-text-center">
-        </a>
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <!-- <span class="navbar-toggler-icon"></span> -->
-          <i class="fa-solid fa-bars text-white"></i>
-        </button>
-      </div>
-    </div>
-  </header>
-
-    <main class="animate__animated animate__fadeIn">
-      <section class="container">
-        <nav aria-label="breadcrumb" style="padding-top:5rem">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html" class="text-danger"><h4>Inicio</h4></a></li>
-            <li class="breadcrumb-item active" aria-current="page"><h4 class="d-flex">Mi perfil</h4></li>
-          </ol>
-        </nav>
-        </section>
-        <section class="container">
-            <div class="row">
-                <div class="col-md-7 mt-2">
-                    <h1 class="display-5 fw-bold">Hola, soy Eli <i class="fa-solid fa-hand-peace text-degrade"></i></h1>
-                    <div class="col-md-12">
-                      <div class="btn-group  mb-2" role="group" aria-label="Default button group">
-                        <a href="https://www.linkedin.com/in/eli-triniguerrero/" target="_blank" class="btn btn-outline-dark"
-                          title="Perfil Linkedin">
-                          <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/eli-triniguerrero" target="_blank" class="btn btn-outline-dark"
-                          title="Perfil GitHub">
-                          <i class="fab fa-github-alt"></i>
-                        </a>
-                        <a href="https://platzi.com/p/eli_triniguerrero/" target="_blank" class="btn btn-outline-dark"
-                        title="Perfil Platzi">
-                        <i class="fa-solid fa-user-astronaut"></i>
-                        </a>
-                        <a href="https://www.instagram.com/ely_bookzinea/" target="_blank" class="btn btn-outline-dark"
-                          title="Perfil Instagram">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <p class="subtitle">Soy diseñadora web y diseñadora UI/UX con 2 años de experiencia.</p>
-                    <p class="subtitle">Estudié diseño gráfico y soy egresada de Laboratoria con el perfil 
-                        de desarrolladora web jr.
-                    </p> 
-                    <p class="subtitle">
-                        En Laboratoria aprendí a desarrollar sitios web con HTML5, CSS3 y Javascript, 
-                        a planificar y desarrollar proyectos digitales con metodologías ágiles 
-                         en un entorno de trabajo colaborativo, aprendizaje continuo y autónomo.
-                         Esto me ha permitido expandir mi pensamiento creativo y  
-                        adaptarme a nuevas herramientas.
-                    </p>
-                    <!-- <p class="subtitle">Tengo experiencia colaborando con programadores (back-end y front-end),
-                         donde pude entender cómo funciona un producto digital a partir de los requerimientos, 
-                         flujos de usuarios, pruebas de usabilidad y pase a producción.</p> -->
-                    <p class="subtitle">Quiero integrarme a un equipo empático y 
-                        abierto a compartir sus conocimientos para una mejora continua.
-                    </p>
-                </div>
-                <div class="col-md-5 mt-5">
-                    <img src="assets/imgs/v2/perfil_setg.jpg" width="100%" 
-                    class="shadow p-3 mb-5 bg-body rounded" alt="foto eli diseñadora">
-                </div>
-            </div>
-            <div class="row">
-              
-            </div>
-        </section>
-        <section class="container mt-5 mb-5">
-            <div class="row">
-                <div class="col-md-6">
-                  <div class="card shadow p-2 mb-5 bg-body rounded">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="text-center text-degrade">
-                            <i class="fa-solid fa-wand-magic-sparkles fa-3x"></i>
-                          </div>
-                          <h3 class="text-center"> Habilidades de diseño</h3>
-                          <ul>
-                            <li>Diseño visual responsive</li>
-                            <li>Wireframes</li>
-                            <li>Prototipos interactivos</li>
-                            <li>Flujos de usuario, mapas de sitio</li>
-                            <li>Design thinking</li>
-                            <li>Diseño centrado en el usuario</li>
-                            <li>Brenchmark</li>
-                            <li>Métodología 5W's</li>
-                            <li>Principios de usabilidad</li>
-                            <li>Patrones de diseño</li>
-                          </ul>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="text-center text-degrade">
-                            <i class="fa-solid fa-wand-sparkles fa-3x"></i>
-                          </div>
-                          <h3 class="text-center"> Habilidades técnicas</h3>
-                          <ul>
-                            <li>Figma</li>
-                            <li>Adobe XD</li>
-                            <li>Adobe Illustrator</li>
-                            <li>Adobe Photoshop</li>
-                            <li>Adobe InDesign</li>
-                            <li>Jira</li>
-                            <li>Miró</li>
-                            <li>HTML5</li>
-                            <li>CSS3, Bootstrap</li>
-                            <li>Javascript (básico)</li>
-                            <li>Git, GitHub, GitLab</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="card shadow p-2 mb-5 bg-body rounded">
-                        <div class="card-body">
-                          <div class="text-center">
-                            <a href="proyectos.html" class="btn btn-block d-grid gap-2 btn-outline-light text-dark bg-degrade">
-                              <h3 class="text-center">
-                                  <i class="fa-solid fa-lightbulb"></i> Proyectos <i class="fa-solid fa-chevron-right"></i></h3>
-                          </a> 
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-md-6">
-                  <div class="card shadow p-2 mb-5 bg-body rounded">
-                    <div class="card-body">
-                      <div class="text-center text-degrade">
-                        <!-- <i class="fa-solid fa-briefcase fa-3x"></i> -->
-                        <i class="fa-solid fa-road fa-3x"></i>
-                      </div>
-                        <h3 class="text-center"> Mi trayectoria</h3>
-                        <div class="pt-2">
-                          <h5> <i class="fa-solid fa-briefcase"></i> Experiencia profesional</h5>
-                        </div>
-                        <ul>
-                          <li>
-                            <div class="fw-bold">DESICI - Diseñadora web jr</div>
-                            <div>(Mayo, 2020 - Agosto, 2022)</div>
-                          </li>
-                          <li>
-                            <div class="fw-bold">Historias en Papel - Asesora de ventas</div>
-                            <div>(Marzo, 2018 - Abril, 2019)</div>
-                          </li>
-                          
-                      </ul>
-                      <div class="pt-2">
-                        <h5><i class="fa-solid fa-graduation-cap"></i> Educación</h5>
-                      </div>
-                      <ul>
-                        <li>
-                          <div class="fw-bold">Bootcamp Laboratoria MX</div>
-                          <div class="fw-bold">Desarrolladora web jr</div>
-                          <div>(Junio - Diciembre, 2019)</div>
-                        </li>
-                        <li>
-                          <div class="fw-bold">Universidad Privada del Estado de México, Plantel Tecámac</div>
-                          <div class="fw-bold">Licenciatura en diseño gráfico</div>
-                          <div>(Octubre,2011 - Febrero, 2015)</div>
-                        </li>
-                      </ul>
-                      <div class="pt-2">
-                        <h5><i class="fa-solid fa-chalkboard-user"></i> Certificaciones</h5>
-                      </div>
-                      <ul>
-                        <li>
-                          <div class="fw-bold">Certificado profesional de Diseño de Experiencia del Usuario (UX) de Google</div>
-                          <div>Septiembre, 2022 - En curso</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+              <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <!-- <a class="navbar-brand" href="#"></a> -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                      <i class="fas fa-hand-peace"></i> Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#proyectos">
+                      <i class="fas fa-briefcase"></i> Proyectos</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav d-flex flex-row">
+                  <!-- Icons -->
+                  <li class="nav-item me-3 me-lg-0">
+                    <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item me-3 me-lg-0">
+                    <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item me-3 me-lg-0">
+                    <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+                      <i class="fas fa-user-astronaut"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item me-3 me-lg-0">
+                    <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
-            
-        </section>
-    </main>
-    <footer class=" py-2">
-      <div class="container">
-        <p class="text-center mb-2">
-          <a href="#" class=""><i class="fa-solid fa-circle-arrow-up fa-3x text-degrade"></i></a>
-        </p>
-      </div>
-    </footer>
+          </nav>
+          <div class="p-5 bg-light mb-4 mt-5 animate__animated animate__fadeIn">
+            <h1 class="">Sobre mí</h1>
+            <!-- Breadcrumb -->
+            <nav class="d-flex">
+              <h6 class="mb-0">
+                <a href="index.html" class="text-reset">Inicio</a>
+                <span>/</span>
+                <a href="#" class="text-reset"><u>Sobre mí</u></a>
+              </h6>
+            </nav>
+            <!-- Breadcrumb -->
+          </div>  
+          <!-- /Navbar -->
+        </header>
+        <!--Main Navigation-->
+      
+        <!--Main layout-->
+        <main class="animate__animated animate__fadeIn">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>Hola, soy Eli <i class="fas fa-hand-peace"></i></h2>
+                <div class="pb-2">
+                  Soy diseñadora web y diseñadora UI/UX con 2 años de experiencia.
+                </div>
+                <div class="pb-2">
+                  Estudié diseño gráfico y soy egresada de Laboratoria con el perfil de desarrolladora web jr.
+                </div>
+                <div class="pb-2">
+                  En Laboratoria aprendí a desarrollar sitios web con HTML5, CSS3 y Javascript, 
+                  a planificar y desarrollar proyectos digitales con metodologías ágiles en un 
+                  entorno de trabajo colaborativo, aprendizaje continuo y autónomo. 
+                  Esto me ha permitido expandir mi pensamiento creativo y adaptarme a nuevas herramientas.
+                </div>
+                <div>
+                  Quiero integrarme a un equipo empático y abierto a compartir sus conocimientos para una mejora continua.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="assets/imgs/v2/perfil_setg.jpg" 
+                     class="img-thumbnail" alt="Foto perfil Elizabeth"/>
+              </div>
+            </div>
+            <!--resume-->
+            <div class="row">
+              <div class="col-md-12 mt-5">
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a  class="nav-link active" id="ex3-tab-1" data-mdb-toggle="tab"
+                        href="#ex3-tabs-1" role="tab" aria-controls="ex3-tabs-1" aria-selected="true">
+                        Habilidades
+                        </a>
+                  </li><li class="nav-item" role="presentation">
+                    <a  class="nav-link" id="ex3-tab-2" data-mdb-toggle="tab"
+                        href="#ex3-tabs-2" role="tab" aria-controls="ex3-tabs-2" aria-selected="true">
+                        Experiencia profesional
+                        </a>
+                  </li>
+                </ul>
+                <!-- / Tabs navs -->
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex2-content">
+                  <div class="tab-pane fade show active" id="ex3-tabs-1" role="tabpanel" aria-labelledby="ex3-tab-1">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="fw-bold">
+                          <h3 class="">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Habilidades de diseño
+                          </h3>
+                        </div>
+                        <ul>
+                          <li>Diseño visual responsive</li>
+                          <li>Wireframes</li>
+                          <li>Prototipos interactivos</li>
+                          <li>Flujos de usuario, mapas de sitio</li>
+                          <li>Design thinking</li>
+                          <li>Diseño centrado en el usuario</li>
+                          <li>Brenchmark</li>
+                          <li>Métodología 5W's</li>
+                          <li>Principios de usabilidad</li>
+                          <li>Patrones de diseño</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="fw-bold">
+                          <h3 class="">
+                            <i class="fa-solid fa-wand-sparkles"></i> Habilidades técnicas
+                          </h3>
+                        </div>
+                        <ul>
+                          <li>Figma</li>
+                          <li>Adobe XD</li>
+                          <li>Adobe Illustrator</li>
+                          <li>Adobe Photoshop</li>
+                          <li>Adobe InDesign</li>
+                          <li>Jira</li>
+                          <li>Miró</li>
+                          <li>HTML5 / CSS3</li>
+                          <li>Javascript (básico)</li>
+                          <li>Git / GitHub / GitLab</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="fw-bold">
+                          <h3 class="">
+                            <i class="fas fa-hat-wizard"></i> Habilidades personales
+                          </h3>
+                        </div>
+                        <ul>
+                          <li>Proactiva y creativa</li>
+                          <li>Buena comunicación verbal</li>
+                          <li>Capacidad de liderazgo y autonomía</li>
+                          <li>Resolución de problemas</li>                          
+                        </ul>
+                        <p class="fw-bold">Mis áreas de oportunidad</p>
+                        <ul>
+                          <li>Indesición</li>
+                          <li>Organización</li>
+                          <li>Procastinación</li>
+                          <li>Demasiada directa</li>
 
-    
-    
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-        crossorigin="anonymous"></script>
-    
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <div class="fw-bold">
+                              <h3 class="">
+                                <i class="fa-solid fa-briefcase"></i> Experiencia laboral
+                              </h3>
+                            </div>
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <button
+                                class="accordion-button collapsed fw-bold"
+                                type="button"
+                                data-mdb-toggle="collapse"
+                                data-mdb-target="#flush-collapseOne"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                DESICI - Diseñadora web jr / (Mayo, 2020 - Agosto, 2022)
+                              </button>
+                            </h2>
+                            <div
+                              id="flush-collapseOne"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingOne"
+                              data-mdb-parent="#accordionFlushExample"
+                            >
+                              <div class="accordion-body">
+                                <li>Realicé wireframes, prototipos alta fidelidad y diagramas de flujo de usuario con Figma y Adobe Xd</li>
+                                <li>Maqueté templates con HTML, CSS, Javascript(básico)</li>
+                                <li>Realizé manuales de usuario de acuerdo a requerimientos del cliente</li>
+                                <li>Ejecuté pruebas de uso para la detección oportuna de errores en portales web antes de lanzarlos a producción</li>
+                                <li>Soporte técnico en sitio web en la plataforma de WorPress</li>
+                                <li>Relicé presentaciones efectivas del producto digital mostrando los beneficios en el uso del producto digital.</li>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                              <button
+                                class="accordion-button collapsed fw-bold"
+                                type="button"
+                                data-mdb-toggle="collapse"
+                                data-mdb-target="#flush-collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Historias en Papel - Asesora de ventas / (Marzo, 2018 - Abril, 2019)
+                              </button>
+                            </h2>
+                            <div
+                              id="flush-collapseTwo"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingTwo"
+                              data-mdb-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <ul>
+                                  <li>Asesoría personalizada en la venta de invitaciones para eventos sociales.</li>
+                                  <li>Trabajé colaborativamente en el alcance de objetivos de venta en la sucursal.</li>
+                                  <li> Acompañé al cliente en el proceso de ideación, desarrollo, autorización, ejecución y entrega de las invitaciones.</li>
+                                  <li>Orienté y transmití conocimientos sobre los procesos de impresión de acuerdo a las necesidades del cliente.
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="fw-bold">
+                          <h3 class="">
+                            <i class="fa-solid fa-graduation-cap"></i> Educación
+                          </h3>
+                        </div>
+                        <ul>
+                          <li class="pb-3">
+                            <div class="fw-bold">Certificado profesional de Diseño de Experiencia del Usuario (UX) de Google</div>
+                            <div>Septiembre, 2022 - En curso</div>
+                          </li>
+                          <li class="pb-3">
+                            <div class="fw-bold">Bootcamp Laboratoria MX</div>
+                            <div>(Junio - Diciembre, 2019)</div>
+                            <div>Desarrolladora web jr</div>
+                          </li>
+                          <li class="pb-3">
+                            <div class="fw-bold">Universidad Privada del Estado de México</div>
+                            <div>(Octubre, 2011 - Febrero, 2015)</div>
+                            <div>Licenciatura en Diseño Gráfico</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>    
+            </div>
+          </div>
+        </main>
+        <!--Main layout-->
+      
+        <!--Footer-->
+        <footer class="bg-light text-lg-start">      
+          <hr class="style-line mx-auto" />
+          <h4 class="text-center">Contacta conmigo <i class="fas fa-hand-peace"></i></h4>
+          <div class="text-center py-4 align-items-center">
+            <a class="btn btn-primary bg-gradient btn-lg btn-floating mx-1" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="btn btn-dark bg-gradient btn-lg btn-floating mx-1" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a class="btn btn-success bg-gradient btn-lg btn-floating mx-1" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+              <i class="fas fa-user-astronaut"></i>
+            </a>
+            <a class="btn btn-danger bg-gradient btn-lg btn-floating mx-1" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+      </div>      
+          <!-- Copyright -->
+          <div class="text-center p-3 bg-dark bg-gradient text-white">
+            Hecho con <i class="fas fa-heart text-danger"></i> SETG © 2022
+            <br>
+            Maquetado con Material Design for Bootstrap 
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!--Footer-->
+  
+  
+  
+  
+
+  <!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
 
 </body>
 
