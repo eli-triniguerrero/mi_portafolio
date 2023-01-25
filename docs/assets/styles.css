@@ -125,3 +125,7 @@ blockquote {
     padding-top: 10vh;
   }
 }
+
+i {
+  font-size: 25px;
+}
