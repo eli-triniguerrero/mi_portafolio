@@ -126,12 +126,9 @@ blockquote {
   }
 }
 
-i, .social-text, .social-icon {
+i {
   font-size: 20px;
 }
 .nav-item a {
   font-size: 20px;
-}
-.social-icon {
-  text-transform: lowercase;
 }
