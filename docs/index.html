@@ -21,13 +21,13 @@
     #intro {
       /* background-image: url("assets/imgs/v2/bg_red_abstract.jpg"); */
       background-image: url("assets/imgs/img_fondo.jpg");
-      height: 100vh;
+      height: 80vh;
     }
 
     /* Height for devices larger than 576px */
     @media (min-width: 992px) {
       #intro {
-        margin-top: -58.59px;
+        margin-top: -40px;
       }
     }
 
@@ -42,22 +42,6 @@
       background: linear-gradient(90deg, #EA0037 0%,
           #FF9900 90%);
     }
-
-    .mask-custom {
-      backdrop-filter: contrast(140%) brightness(100%) saturate(100%) sepia(50%) hue-rotate(0deg) grayscale(0%) invert(0%) blur(0px);
-      mix-blend-mode: lighten;
-      background: rgba(161, 44, 199, 0.31);
-      opacity: 1;
-    }
-
-    /* hr.style-line {
-      width: 50%;
-      height: 1rem;
-      border-radius: 10rem;
-      background: #FF9900;
-      background: linear-gradient(90deg, #FF9900 0%,
-          #EA0037 770%);
-    } */
   </style>
 </head>
 
@@ -115,11 +99,12 @@
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.483);">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
           <div class="text-white mt-5">
-            <h1 class="text-Berks">Hola, soy Elizabeth,</h1>
-            <h1 class="text-Berks">diseñadora web y diseñadora UI/UX.</h1>
+            <h1>Hola, soy Elizabeth,</h1>
+            <h1>diseñadora de interfaz de usuario UI/UX</h1>
             <h3 class="mt-4">Empática, creativa y curiosa por el mundo de la tecnología.</h3>
             <h3>Disfruto aprender y adaptarme al ritmo de la incertidumbre y los nuevos retos.</h3>
-
+            <a  href="" type="button" class="btn btn-light text-bold">
+              <strong><i class="fas fa-download"></i> Descargar CV</strong></a>
           </div>
         </div>
       </div>
@@ -131,15 +116,16 @@
   <main class="mt-5 animate__animated animate__fadeIn">
     <div class="container">
       <!--Section: Content-->
-      <section>
+      <section id="sobremi">
         <div class="row">
-          <div class="col-md-6 gx-5 mb-4">
-            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
-              <img src="assets/imgs/v2/perfil_setg.jpg" class="img-thumbnail" alt="Foto perfil Elizabeth" />
+          <div class="col-md-4 gx-5 mb-4">
+            <div class="shadow-2-strong rounded-circle" data-mdb-ripple-color="light">
+              <img src="assets/imgs/v2/perfil_setg.jpg" class="img-thumbnail border rounded-circle" 
+              alt="Foto perfil Elizabeth" width="" />
             </div>
           </div>
 
-          <div class="col-md-6 gx-5 mb-4" id="sobremi">
+          <div class="col-md-8 gx-5 mb-4">
             <h4><i class="fas fa-hand-peace"></i> Sobre mí</h4>
             <p class="text-paragrah">
               Tengo 2 años de experiencia creando <strong>prototipos</strong>
@@ -280,9 +266,8 @@
 
 
   <!-- MDB -->
+  <script src="index.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
-  
-
 </body>
 
 </html>
