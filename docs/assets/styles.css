@@ -1,4 +1,7 @@
-
+:root {
+  --bs-frambuesa: #E8104A;
+  --bs-naranja: #FF6E07;
+}
 @font-face {
     font-family: 'Rubik';
     src: url('fonts/Rubik-Regular.ttf') format('truetype');
@@ -38,85 +41,59 @@
 /* General */
 body {
   font-family: 'Rubik';
+  font-size: 1.2rem;
   color: #333333;
 }
-main.main-padding {
-  padding-top: 20vh;
+ /* Default height for small devices */
+ .intro {
+  /* height: 400px; */
+  margin-top: 15vh;
+  margin-bottom: 15vh;
 }
-.text-paragrah {
-  font-size: 20px !important;
+.intro-title {
+    font-size: 3.8rem; /*72px*/
+    line-height: 4.3rem;
+    font-weight: bold;
+}
+.intro-subtitle {
+    font-size: 1.3rem;
+}
+.bg-about {
+    color: #ffffff;
+    background-color: var(--bs-frambuesa);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.label-title {
+  font-size: 2.5rem;
+}
+.text-frambuesa {
+  color: var(--bs-frambuesa);
+}
+.text-naranja {
+  color: var(--bs-naranja);
+}
+
+.bg-button-frambuesa {
+  color: var(--bs-frambuesa);
+  border-color: var(--bs-frambuesa) !important;
+}
+.bg-button-frambuesa:hover {
+  color: #ffffff;
+  background-color: var(--bs-frambuesa);
 }
 
 
-/*-+-+-+-+-+-+-+-+ INICIO +-+-+-+-+-+-+-+-*/
-.main-container {
-  margin-top: 8rem;
-}
-.bg-img {
-    background-size:cover;
-    background-attachment:scroll;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-.bg-img-inicio {
-  background-image: url('imgs/v2/bg_red_abstract.jpg');
-  width: 100%;
-  height: 100vh;
-}
-.bg-img-navbar {
-  background-image: url('imgs/v2/bg_red_abstract.jpg');
-  width: 100%;
-  background-size:cover;
-  background-position: center;
-}
-.bg-img-quiensoy {
-  background-image: url('imgs/bg_purple_degrade_01.png');
-  background-position: top left !important;
-}
-.bg-img-proyectos {
-  background-image: url('imgs/bg_aqua_degrade_01.png');
-}
-.subtitle {
-  font-size: 1.2rem;
-}
-.text-degrade {
-  background: -webkit-linear-gradient(#efcc00,#b70404, #333333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #b70404;  
-}
 
-.bg-degrade:hover {
-  background: -webkit-linear-gradient(#efcc00,#b70404, #333333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #b70404;  
-}
-.background-dark {
-  background-color: #0c0c0c;
-}
 
-/* CITA */
-blockquote {
-  color: #f2c605;
-  font-family: 'BerkshireSwash', Tahoma, sans-serif;
-  font-size: 1.2rem; 
-  margin: 1rem auto;
-}
 
-.navbar-toggler-icon {
-  color: #ffffff !important;
-}
 
- /*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
- /* @media  (min-width: 500px) {
-  .bg-img-inicio {
-    height: 100%;
-  }
-  main.main-padding {
-    padding-top: 2vh;
-  }
-} */
+
+
+/*-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
 @media  (max-width: 800px) {
   .bg-img-inicio {
     height: 100%;
