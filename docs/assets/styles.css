@@ -45,6 +45,10 @@ body {
   font-size: 1.2rem;
   color: #333333;
 }
+
+hr {
+  border-color: var(--bs-frambuesa);
+}
 /* NABVAR */
 .bg-navbar {
   background: linear-gradient(63.5deg, var(--bs-frambuesa) 16.42%, var(--bs-naranja) 83.15%);
@@ -102,6 +106,11 @@ body {
 .link-frambuesa {
   color: var(--bs-frambuesa);
   font-size: 1.2rem;
+}
+
+.btn-outline-dark:hover {
+  background-color: black;
+  color: white;
 }
 
 .footer-link:hover {
