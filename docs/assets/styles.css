@@ -2,6 +2,7 @@
   --bs-frambuesa: #E8104A;
   --bs-naranja: #FF6E07;
   --bs-amarillo: #ffba26;
+  --bs-dark: #333333;
 }
 @font-face {
     font-family: 'Rubik';
@@ -43,11 +44,14 @@
 body {
   font-family: 'Rubik';
   font-size: 1.2rem;
-  color: #333333;
+  color: var(--bs-dark);
 }
 
-hr {
+.line-frambuesa {
   border-color: var(--bs-frambuesa);
+}
+.line-dark {
+  border-color: var(--bs-dark);
 }
 /* NABVAR */
 .bg-navbar {
@@ -128,14 +132,14 @@ hr {
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
 /* @media  (max-width: 800px) {
-  .bg-img-inicio {
-    height: 100%;
+  .intro {
+    margin-top: 10vh;
   }
-  main.main-padding {
-    padding-top: 10vh;
-  }
+  .intro-title {
+    font-size: 2rem;
+    line-height: normal;
 }
-
-i {
-  font-size: 25px;
+.intro-subtitle {
+    font-size: 1.3rem;
+}
 } */
