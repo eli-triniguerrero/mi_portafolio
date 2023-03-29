@@ -1,6 +1,7 @@
 :root {
   --bs-frambuesa: #E8104A;
   --bs-naranja: #FF6E07;
+  --bs-amarillo: #ffba26;
 }
 @font-face {
     font-family: 'Rubik';
@@ -44,6 +45,17 @@ body {
   font-size: 1.2rem;
   color: #333333;
 }
+/* NABVAR */
+.bg-navbar {
+  background: linear-gradient(63.5deg, var(--bs-frambuesa) 16.42%, var(--bs-naranja) 83.15%);
+  color: #ffffff;
+}
+.nav-link:hover {
+  background-color: #333333;
+  border: 1px #333333;
+  border-radius: 4px;
+}
+
  /* Default height for small devices */
  .intro {
   /* height: 400px; */
@@ -74,14 +86,26 @@ body {
 .text-naranja {
   color: var(--bs-naranja);
 }
+.text-bold {
+  font-weight: bold;
+}
 
 .bg-button-frambuesa {
   color: var(--bs-frambuesa);
   border-color: var(--bs-frambuesa) !important;
+  font-size: 1.2rem;
 }
 .bg-button-frambuesa:hover {
   color: #ffffff;
   background-color: var(--bs-frambuesa);
+}
+.link-frambuesa {
+  color: var(--bs-frambuesa);
+  font-size: 1.2rem;
+}
+
+.footer-link:hover {
+  color: var(--bs-amarillo) !important;
 }
 
 
@@ -94,7 +118,7 @@ body {
 /*-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
-@media  (max-width: 800px) {
+/* @media  (max-width: 800px) {
   .bg-img-inicio {
     height: 100%;
   }
@@ -105,4 +129,4 @@ body {
 
 i {
   font-size: 25px;
-}
+} */

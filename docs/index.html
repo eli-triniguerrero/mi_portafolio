@@ -24,12 +24,12 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top bg-navbar">
             <div class="container">
                 <!-- Navbar brand -->
                 <a class="navbar-brand me-2" href="https://mdbgo.com/">
-                    <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-                    height="16" alt="MDB Logo" loading="lazy" style="margin-top: -1px;"/>
+                    <img src="assets/imgs/eg_logo_white.png"
+                    height="40" alt="MDB Logo" loading="lazy" style="margin-top: -1px;"/>
                 </a>
                 <!-- Toggle button -->
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample"
@@ -41,16 +41,28 @@
                     <!-- Left links -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Dashboard</a>
+                            <a class="nav-link text-white" href="#">
+                              <i class="fas fa-hand-peace"></i> Mi perfil</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">
+                            <i class="fas fa-briefcase"></i> Proyectos</a>
+                      </li>
                     </ul>
                     <!-- Left links -->
                     <div class="d-flex align-items-center">
-                        <button type="button" class="btn btn-link px-3 me-2">Login</button>
-                        <button type="button" class="btn btn-primary me-3">Sign up for free</button>
-                        <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit"
-                        role="button"><i class="fab fa-github"></i>
-                        </a>
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="https://www.linkedin.com/in/eli-triniguerrero/" target="_blank"
+                            role="button"><i class="fab fa-linkedin-in"></i> Linkedin
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="https://github.com/mdbootstrap/mdb-ui-kit"
+                            role="button"><i class="fas fa-envelope"></i> Contáctame
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                 </div>
     <!-- Collapsible wrapper -->
@@ -72,7 +84,7 @@
                         Me adapto al ritmo de la incertidumbre y 
                         afronto los nuevos retos con carácter colaborativo.</div>
                 </div>
-                <div class="intro-buttons mb-4">
+                <div class="intro-buttons shadow-0 btn-group btn-group-lg d-grid gap-2 d-md-block mb-5" role="group" aria-label="Basic example"">
                     <a class="btn btn-outline-light btn-lg bg-button-frambuesa" href="#!" role="button">
                         <i class="fas fa-download"></i> Descargar CV</a>
                     <a class="btn btn-outline-light btn-lg bg-button-frambuesa" href="#!" role="button">
@@ -97,26 +109,45 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-4">
-                    <div>Tengo experiencia creando wireframes, flujos de usuario y 
-                        prototipos baja y alta fidelidad con Figma y Adobe XD.
+                  <div class="position-relative">
+                    <div class="text-center mb-3">
+                      <img class="img-fluid rounded-circle" src="assets/imgs/img_plan.png" alt="Card image">
+                    </div>
+                  </div>
+                    <div>Tengo experiencia creando <span class="text-bold">wireframes</span>, 
+                      <span class="text-bold">flujos de usuario</span> y 
+                        <span class="text-bold">prototipos</span> con Figma y Adobe XD.
                     </div>
                     <div>
-                        Puedo colaborar en la maquetación de templates para landing pages 
-                        con HTML, CSS y Javascript.
+                        Puedo colaborar en la maquetación de templates con 
+                        <span class="text-bold">HTML, CSS y Javascript</span>, 
+                        o bien, aprender una nueva tecnología para mejorar mi 
+                        proceso creativo al diseñar componentes.
                     </div>
                 </div>
                 <div class="col-md-4">
+                  <div class="position-relative">
+                    <div class="text-center mb-3">
+                      <img class="img-fluid rounded-circle" src="assets/imgs/img_puzzle.png" alt="Card image">
+                    </div>
+                  </div>
                     <div>
-                        Tengo experiencia colaborando con programadores, 
-                        los que me permitieron entender la arquitectura de un producto digital 
-                        para generar mejores propuestas visuales y diseño de componentes.
+                      He estado involucrada en todas las fases de desarrollo de un producto digital,
+                      entendiendo la arquitectura, trabajando por objetivos y por historias de usuario 
+                      dentro de un entorno agil y colaborativo, permitiéndome evaluar e iterar flujos 
+                      para ofrecer la mejor solución al cliente. 
                     </div>
                 </div>
                 <div class="col-md-4">
+                  <div class="position-relative">
+                    <div class="text-center mb-3">
+                      <img class="img-fluid rounded-circle" src="assets/imgs/img_tools.png" alt="Card image">
+                    </div>
+                  </div>
                     <div>
-                        Quiero formar parte de la evolución tecnológica centrada en el usuario, 
-                        entender su proceso de interacción para proponer ideas que mejoren 
-                        la experiencia al interactuar con cualquier tipo de interfaz digital.
+                      Quiero seguir involucrándome en el <span class="text-bold">diseño centrado en el usuario</span>, 
+                      entender su proceso de interacción con la tecnología y proponer 
+                      soluciones que les ayuden a cubrir sus necesidades gracias a una buena app.
                     </div>
                 </div>
             </div>
@@ -132,17 +163,141 @@
         <div class="row m-3 d-flex justify-content-center">
             <div class="col-md-5">
                 <img src="assets/imgs/img_rentamo_app.png"
-        alt="Trendy Pants and Shoes" class="img-fluid rounded-start"/>
+                alt="Proyecto rentamo aplicacion movil" class="img-fluid rounded-start"/>
             </div>
             <div class="col-md-7">
-                <div>Réntamo App</div>
-                <div></div>
+                <div class="text-bold">Réntamo App</div>
+                <div>Réntamo App permite rentar muebles en tiempo real, 
+                  agendando eficientemente la renta y mostrando de manera 
+                  atractiva y simple el catálogo disponible.
+                </div>
+                <div>Mi Rol: 
+                  <span class="badge rounded-pill badge-secondary">Diseño UI, diseño UX</span>
+                </div>
+                <div>Herramientas:
+                  <span class="badge rounded-pill badge-secondary">Benchmark</span>
+                  <span class="badge rounded-pill badge-secondary">User persona</span>
+                  <span class="badge rounded-pill badge-secondary">Flujo de usuario</span>
+                  <span class="badge rounded-pill badge-secondary">Wireframes</span>
+                  <span class="badge rounded-pill badge-secondary">Prototipado</span>
+                </div>
+                <div class="intro-buttons mt-4 mb-4">
+                  <a class="link-frambuesa" href="https://github.com/eli-triniguerrero/rentamo_app/blob/main/README.md" 
+                  role="button" target="_blank">
+                    Ir al proyecto <i class="fas fa-up-right-from-square"></i></a>
+              </div>
             </div>
         </div>
+        <div class="row m-3 d-flex justify-content-center">
+          <div class="col-md-5">
+              <img src="assets/imgs/img_taxibip.png"
+              alt="Proyecto taxi bip sitio web" class="img-fluid rounded-start"/>
+          </div>
+          <div class="col-md-7">
+              <div class="text-bold">TAXIBIP</div>
+              <div>Pide taxi cuándo quieras, dónde quieras con TAXIBIP APP.</div>
+              <div>Diseño de un sitio web para una aplicación llamada TAXIBIP. 
+                La aplicación permite al usuario solicitar taxi desde cualquier lugar
+              de una forma segura y rápida.</div>
+              <div>Mi Rol: 
+                <span class="badge rounded-pill badge-secondary">Diseño web</span>
+                <span class="badge rounded-pill badge-secondary">Vista desktop, móvil</span>
+              </div>
+              <div>Herramientas:
+                <span class="badge rounded-pill badge-secondary">Brief</span>
+                <span class="badge rounded-pill badge-secondary">Proceso de ideación</span>
+                <span class="badge rounded-pill badge-secondary">Diseño de marca</span>
+              </div>
+              <div class="intro-buttons mt-4 mb-4">
+                <a class="link-frambuesa" href="https://github.com/eli-triniguerrero/taxibip/blob/main/README.md" 
+                role="button" target="_blank">
+                  Ir al proyecto <i class="fas fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row m-3 d-flex justify-content-center">
+          <div class="col-md-5">
+              <img src="assets/imgs/img_arlefin_app.png"
+              alt="Trendy Pants and Shoes" class="img-fluid rounded-start"/>
+          </div>
+          <div class="col-md-7">
+              <div class="text-bold">Arlefin App</div>
+              <div>Arlefin es una aplicación que permite aprender a ahorrar con diversas 
+                mini actividades que ayudarán al niño o niña a ser más consciente del f
+                lujo de dinero. La app incluye un asistente virtual para animar al niño o 
+                niña a interactuar con la aplicación y hacer diversas actividades.
+              </div>
+              <div>Mi Rol: 
+                <span class="badge rounded-pill badge-secondary">Diseño UI</span>
+                <span class="badge rounded-pill badge-secondary">diseño UX</span>
+                <span class="badge rounded-pill badge-secondary">diseño de personaje</span>
+              </div>
+              <div>Herramientas:
+                <span class="badge rounded-pill badge-secondary">Wireframes</span>
+                <span class="badge rounded-pill badge-secondary">User persona</span>
+                <span class="badge rounded-pill badge-secondary">Flujo de usuario</span>
+                <span class="badge rounded-pill badge-secondary">Prototipado</span>
+              </div>
+              <div class="intro-buttons mt-4 mb-4">
+                <a class="link-frambuesa" href="https://github.com/eli-triniguerrero/arlefin_app/blob/main/README.md" 
+                role="button" target="_blank">
+                  Ir al proyecto <i class="fas fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
     </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-lg-start text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row justify-content-center">
+          <!--Grid column-->
+          <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">¿Platicamos?</h5>
+            <div> Gracias por visitarme (ɔ◔‿◔)ɔ ♥</div>
+            <div>Puedes ponerte en contacto conmigo con un correo eléctronico, 
+              por mensaje a mi WhatsApp o visitarme en Linkedin.</div>
+              <div>Será un placer conocerte.</div>
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <a class="footer-link text-white btn-floating" href="mailto: eli.triniguerrero@gmail.com" target="_blank" role="button">
+              <p><i class="fas fa-envelope"></i> eli.triniguerrero@gmail.com</p>
+            </a>
+            <a class="footer-link text-white btn-floating" href="https://wa.me/525520561066?text=Hola%20Eli%20estoy%20interesada%20en%20tu%20perfil%20" role="button">
+              <p><i class="fab fa-whatsapp"></i> 55 2056 1066</p>
+            </a>
+            <a class="footer-link text-white btn-floating" href="assets/cv_elizabethguerrero.pdf" target="_blank" role="button">
+              <p><i class="fas fa-download"></i> Descarga mi CV</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+            <a class="footer-link text-white btn-floating" href="https://www.linkedin.com/in/eli-triniguerrero/" target="_blank" role="button">
+              <p><i class="fab fa-linkedin-in"></i> Linkedin</p>
+            </a>
+            <a class="footer-link text-white btn-floating social-icon" href="https://wa.me/525520561066?text=Hola%20Eli%20estoy%20interesada%20en%20tu%20perfil%20" role="button">
+              <p><i class="fab fa-github-alt"></i> GitHub</p>
+            </a>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        SETG © 2023 Hecho con <i class="fas fa-heart"></i> y 
+          maquetado con Material Design for Bootstrap <i class="fab fa-bootstrap"></i>
+      </div>
+      <!-- Copyright -->
+    </footer>
+<!-- Footer -->
 
 
 
-    
+    <!-- SCRIPT -->
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
 </body>
 </html>
